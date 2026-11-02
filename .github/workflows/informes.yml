@@ -27,7 +27,7 @@ jobs:
         with:
           image: juanbiancuzzo/latex:latest
           options: -v ${{ github.workspace }}/${{ matrix.carpeta }}:/latex
-          run: sh -c "/scripts/compile.sh && cp /latex/main.pdf /latex/${{ matrix.nombre }}.pdf"
+          run: sh -c "/scripts/compile.sh && cp /latex/main.pdf '/latex/${{ matrix.nombre }}.pdf'"
 
       - name: Subir pdf a github artifacts
         uses: actions/upload-artifact@v4
