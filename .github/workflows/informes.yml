@@ -11,10 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        carpeta: [propuesta]
+        carpeta: [propuesta, final]
         include:
           - carpeta: propuesta
             nombre: Plan de Trabajo - Tesis de Grado de Ingeniería Electrónica - Juan Ignacio Biancuzzo
+          - carpeta: final
+            nombre: Informe final - Tesis de Grado de Ingeniería Electrónica - Juan Ignacio Biancuzzo
     steps:
       - name: Conseguir repo en la rama correspondiente
         uses: actions/checkout@v4
