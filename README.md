@@ -5,6 +5,37 @@ Se incluye en este ropositorio los informes necesarios para esta tesis
  * [Plan de Trabajo](https://github.com/JuanBiancuzzo/IE-Tesis-de-grado/releases/download/informe/Plan.de.Trabajo.-.Tesis.de.Grado.de.Ingenieria.Electronica.-.Juan.Ignacio.Biancuzzo.pdf)
  * [Informe final](https://github.com/JuanBiancuzzo/IE-Tesis-de-grado/releases/download/informe/Informe.final.-.Tesis.de.Grado.de.Ingenieria.Electronica.-.Juan.Ignacio.Biancuzzo.pdf)
 
+Como también se encuentra el código útilizado como submodulo
+```
+ ┬
+ ├── common
+ ├── Core
+ │   ├── Inc
+ │   ├── Src
+ │   └── Startup
+ ├── Drivers
+ │   ├── CMSIS
+ │   │   ├── Include
+ │   │   ├── Device
+ │   │   │   └── ST
+ │   │   │       └── STM32H7xx
+ │   │   └── RTOS2
+ │   └── STM32H7xx_HAL_Driver
+ │       ├── Inc
+ │       └── Src
+ ├── FATFS
+ │   ├── App
+ │   └── Target
+ ├── Middlewares
+ │   └── Third_Party
+ │       ├── FatFs
+ │       └── FreeRTOS
+ ├── targets
+ │   └── stm32h753
+ └── tests
+     └── unit
+```
+
 ## Crearlos localmente
 Utilizando este repositorio se puede ejecutar, por medio de docker, los informes con la siguiente linea
 ```bash
